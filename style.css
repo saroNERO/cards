@@ -55,8 +55,40 @@ body {
     height: 160px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.follow {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.followers {
+    transform: translateX(15px) translateY(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn {
+    background: yellow;
+    border-radius: 10px;
+    width: 110px;
+    height: 30px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .a2 {
     height: 40px;
     display: flex;
