@@ -27,17 +27,15 @@ body {
     height: 180px;
     border-radius: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .img {
     width: 180px;
     height: 180px;
     background-image: url(https://s3.scoopwhoop.com/anj/st_anger/820657210.jpg);
-    background-size: auto;
-    background-position: center;
+    background-size: 600px;
+    background-position: top;
+    background-position-x: 54%;
     border-radius: 50%;
 }
 
