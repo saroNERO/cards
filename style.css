@@ -5,11 +5,13 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     background: beige;
 }
 
-.card {
+.card,.card1,.card2 {
     width: 500px;
     height: 600px;
     background: rgb(216, 213, 213);
@@ -96,7 +98,7 @@ body {
     justify-content: space-around;
 }
 
-.btn {
+.btn,.btn1,.btn2 {
     background: yellow;
     border-radius: 10px;
     width: 110px;
