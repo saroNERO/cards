@@ -1,15 +1,23 @@
-const spn = document.querySelector('.spn');
-const btn = document.querySelector('.btn');
-let wynik = 1000;
-btn.addEventListener('click',function(){
-    if(btn.innerHTML === "FOLLOW") {
-        wynik++;
-        spn.innerHTML = wynik;
-        btn.innerHTML = "UNFOLLOW";
+const cr = {
+    spn: document.querySelector('.spn'),
+    btn: document.querySelector('.btn'),
+    wynik: 1000,
+
+    f: function() {
+        if(this.btn.innerHTML === "FOLLOW") {
+                    this.wynik++;
+                    this.spn.innerHTML = this.wynik;
+                    this.btn.innerHTML = "UNFOLLOW";
+                }
+                else {
+                    this.wynik--;
+                    this.spn.innerHTML = this.wynik;
+                    this.btn.innerHTML = "FOLLOW";
+                }
+    },
+
+    init: function () {
+        this.btn.addEventListener('click',this.f.bind(cr));
     }
-    else {
-        wynik--;
-        spn.innerHTML = wynik;
-        btn.innerHTML = "FOLLOW";
-    }
-});
+}
+cr.init();
