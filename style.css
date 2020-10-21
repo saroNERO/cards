@@ -34,7 +34,7 @@ body {
 
 .square {
     position: absolute;
-    margin: 125px 25px 0 25px;
+    margin-top: 125px;
     width: 450px;
     height: 450px;
     background: white;
@@ -44,4 +44,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
